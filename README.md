@@ -197,7 +197,21 @@ When our component just receives props and renders them to the page, this is a �
 
 From the previous question, we can say that our Booklist component is functional and is stateless.
 
---Code/Image here--
+```js
+// Booklist.js
+
+import React from 'react';
+
+const Booklist = books =>(
+  <ul>
+    {books.map(({title,author}) =>
+      {title}-{author}
+    )}
+  </ul>
+}
+
+export default Contacts;
+```
 
 On the other hand, the BookListContainer component is a class component.
 
@@ -214,7 +228,29 @@ Props (short for properties) are a Component’s configuration. Props are how co
 
 There is also the case that we can have default props so that props are set even if a parent component doesn’t pass props down.
 
- --Code/Image here--
+```js
+class SearchBar extends Component{
+  constructor(props){
+    super(props);
+    this.state = {term: '' };
+  }
+  
+  render(){
+    return(
+      <div className="search-bar">
+        <input 
+          value={this.state.term}
+          onChange={event => this.onInputChange(event.target.value)}/>
+      </div>
+    );
+  }
+  
+  onInputChange(term){
+    this.setState(term);
+    this.props.onSearchTermChange(term);
+  }
+}
+```
 
 Props and State do similar things but are used in different ways. The majority of our components will probably be stateless. Props are used to pass data from parent to child or by the component itself. They are immutable and thus will not be changed. State is used for mutable data, or data that will change. This is particularly useful for user input.
 
@@ -228,7 +264,7 @@ In HTML, form elements such as <input>, <textarea>, and <select> typically maint
   
 With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input.
 
-**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+  **[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
   
 ---
 
