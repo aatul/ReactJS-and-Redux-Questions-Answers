@@ -29,6 +29,7 @@ The major features of React are:
 *	Follows Unidirectional data flow or data binding.
 *	Uses reusable/composable UI components to develop the view.
 
+[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)
 ---
 
 ### 2. What is JSX?
