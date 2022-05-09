@@ -73,7 +73,7 @@ const element = React.createElement(
   'Login'
 )
 ```
-The above React.createElement() function returns an object:
+The above ```React.createElement()``` function returns an object:
 ```js
 {
   type: 'div',
@@ -83,11 +83,11 @@ The above React.createElement() function returns an object:
   }
 }
 ```
-And finally it renders to the DOM using ReactDOM.render():
+And finally it renders to the DOM using ```ReactDOM.render()```:
 ```js
 <div id='login-btn'>Login</div>
 ```
-Whereas a component can be declared in several different ways. It can be a class with a render() method. Alternatively, in simple cases, it can be defined as a function. In either case, it takes props as an input, and returns a JSX tree as the output:
+Whereas a component can be declared in several different ways. It can be a class with a ```render()``` method. Alternatively, in simple cases, it can be defined as a function. In either case, it takes props as an input, and returns a JSX tree as the output:
 ```js
 const Button = ({ onLogin }) =>
   <div id={'login-btn'} onClick={onLogin}>Login</div>
@@ -109,7 +109,7 @@ const Button = ({ onLogin }) => React.createElement(
 
 React.createClass allows us to generate component "classes." But with ES6, React allows us to implement component classes that use ES6 JavaScript classes. The end result is the same -- we have a component class. But the style is different. And one is using a "custom" JavaScript class system (createClass) while the other is using a "native" JavaScript class system.
 
-When using React’s createClass() method, we pass in an object as an argument. So we can write a component using createClass that looks like this:
+When using React’s ```createClass()``` method, we pass in an object as an argument. So we can write a component using createClass that looks like this:
 ```js
 import React from 'react';
 
@@ -141,7 +141,7 @@ const Contacts extends React.Component({
 
 export default Contacts;
 ```
-constructor() is a special function in a JavaScript class. JavaScript invokes constructor() whenever an object is created via a class.
+```constructor()``` is a special function in a JavaScript class. JavaScript invokes ```constructor()``` whenever an object is created via a class.
 
 
 **[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
@@ -223,8 +223,9 @@ On the other hand, the BookListContainer component is a class component.
 
 **The basic difference is: State is mutable and Pros are immutable.**
 
-The State is a data structure that starts with a default value when a Component mounts. It may be mutated across time, mostly as a result of user events.
-Props (short for properties) are a Component’s configuration. Props are how components talk to each other. They are received from above component and immutable as far as the Component receiving them is concerned. A Component cannot change its props, but it is responsible for putting together the props of its child Components. Props do not have to just be data — callback functions may be passed in as props.
+The **State is a data structure** that starts with a default value when a Component mounts. It may be mutated across time, mostly as a result of user events.
+
+**Props (short for properties) are a Component’s configuration**. Props are how components talk to each other. They are received from above component and immutable as far as the Component receiving them is concerned. A Component cannot change its props, but it is responsible for putting together the props of its child Components. Props do not have to just be data — callback functions may be passed in as props.
 
 There is also the case that we can have default props so that props are set even if a parent component doesn’t pass props down.
 
@@ -260,13 +261,13 @@ Props and State do similar things but are used in different ways. The majority o
 
 ### 10. What are Controlled components?
 
-In HTML, form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input. When a user submits a form the values from the aforementioned elements are sent with the form. With React it works differently. The component containing the form will keep track of the value of the input in its state and will re-render the component each time the callback function e.g. onChange is fired as the state will be updated. A form element whose value is controlled by React in this way is called a "Controlled Component".
+In HTML, form elements such as ```<input>```, ```<textarea>```, and ```<select>``` typically maintain their own state and update it based on user input. When a user submits a form the values from the aforementioned elements are sent with the form. With React it works differently. The component containing the form will keep track of the value of the input in its state and will re-render the component each time the callback function e.g. onChange is fired as the state will be updated. A form element whose value is controlled by React in this way is called a "Controlled Component".
   
 With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input.
 
-  **[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
-  
----
 
-Wish you all the best.
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
 ---
+### Wish you all the luck
+
