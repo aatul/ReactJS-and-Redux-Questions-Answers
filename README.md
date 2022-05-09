@@ -7,8 +7,8 @@ Looking forward to appear in React and Redux Interview, here are the key React a
 | ------------- |-------------| 
 | 1             |[How does React work? How does Virtual-DOM work in React?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#1-how-does-react-work-how-does-virtual-dom-work-in-react) | 
 | 2             |[What is JSX?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#2-what-is-jsx) |
-| 3             |[Difference between forward() method & SendRedirect() method?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#3-difference-between-forward-method--sendredirect-method) |
-| 4             |[Difference between HashMap and HashTable?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#4-difference-between-hashmap-and-hashtable) |
+| 3             |[What is the difference between Element and Component?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#3-difference-between-forward-method--sendredirect-method) |
+| 4             |[What is React.createClass?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#4-difference-between-hashmap-and-hashtable) |
 | 5             |[Difference between HashSet and TreeSet?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#5-difference-between-hashset-and-treeset) |
 | 6             |[What is meant by Collections in Java?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#6-what-is-meant-by-collections-in-java) | 
 | 7             |[What is meant by Ordered and Sorted in collections?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#7-what-is-meant-by-ordered-and-sorted-in-collections) |
@@ -56,7 +56,7 @@ const element= React.createElement(
 ```
 ---
 
-### 3. Difference between forward() method & SendRedirect() method?
+### 3. What is the difference between Element and Component?
 
 | forward() method        | sendRedirect() method      | 
 | ------------- |-------------| 
@@ -66,7 +66,7 @@ const element= React.createElement(
 
 ---
 
-### 4. Difference between HashMap and HashTable?
+### 4. What is React.createClass?
 
 | HashMap        | HashTable      | 
 | ------------- |-------------| 
@@ -78,7 +78,7 @@ const element= React.createElement(
 
 ---
 
-### 5. Difference between HashSet and TreeSet?
+### 5. Describe the key differences in React & Angular? / Angular vs React?
 
 | HashSet        | TreeSet      | 
 | ------------- |-------------| 
@@ -88,7 +88,7 @@ const element= React.createElement(
 
 ---
 
-### 6. What is meant by Collections in Java?
+### 6. What are Redux-Observables?
 
 The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects. Java Collections can achieve all the operations that you perform on data such as searching, sorting, insertion, manipulation, and deletion.Java Collection means a single unit of objects. The Java Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet). 
 
@@ -100,133 +100,49 @@ Collections are used to perform the following operations:
 *	Deletion 
 ---
 
-### 7. What is meant by Ordered and Sorted in collections?
+### 7. What is React DOM and what is the difference between React DOM and React?
 
-**Ordered:**
+Prior to v0.14, all ReactDOM functionality was part of React. But later, React and ReactDOM were split into two different libraries.
 
-It means the values that are stored in a collection is based on the values that are added to the collection. So we can iterate the values from the collection in a specific order.
+As the name implies, ReactDOM is the glue between React and the DOM. Often, we will only use it for one single thing: mounting with ReactDOM. Another useful feature of ReactDOM is ReactDOM.findDOMNode() which we can use to gain direct access to a DOM element.
 
-**Sorted:**
-
-Sorting mechanism can be applied internally or externally so that the group of objects sorted in a particular collection is based on properties of the objects.
+For everything else, there’s React. We use React to define and create our elements, for lifecycle hooks, etc. i.e. the guts of a React application.
 
 ---
 
-### 8. Explain about Set and their types in a collection?
+### 8. What are the differences between a Class component and Functional component?
 
-**Set**
+Class components allow us to use additional features such as local state and lifecycle hooks. Also, to enable our component to have direct access to our store and thus hold state.
 
-Set cares about uniqueness. It doesn’t allow duplicates. Here the “equals ( )” method is used to determine whether two objects are identical or not.
+When our component just receives props and renders them to the page, this is a ‘stateless component’, for which a pure function can be used. These are also called dumb components or presentational components.
 
-**Hash Set:**
-*	Unordered and unsorted.
-*	Uses the hash code of the object to insert the values.
-*	Use this when the requirement is “no duplicates and don’t care about the order”.
+From the previous question, we can say that our Booklist component is functional and is stateless.
 
-Example:
-```java
-public class Fruit {
-  public static void main (String[] args){
-    HashSet<String> names = new HashSet <=String>();
-    names.add(“banana”);
-    names.add(“cherry”);
-    names.add(“apple”);
-    names.add(“kiwi”);
-    names.add(“banana”);
-    System.out.println(names);
-  }
-}
-```
-Output:
+<Code/Image here>
 
-[banana, cherry, kiwi, apple]
-
-Doesn’t follow any insertion order. Duplicates are not allowed.
-
-**Linked Hash set:**
-*	An ordered version of the hash set is known as Linked Hash Set.
-*	Maintains a doubly-Linked list of all the elements.
-*	Use this when the iteration order is required.
-
-Example:
-```java
-public class Fruit {
-  public static void main (String[] args){
-    LinkedHashSet<String> names = new LinkedHashSet <String>();
-    names.add(“banana”);
-    names.add(“cherry”);
-    names.add(“apple”);
-    names.add(“kiwi”);
-    names.add(“banana”);
-    System.out.println(names);
-  }
-}
-```
-Output:
-
-[banana, cherry, apple, kiwi]
-
-Maintains the insertion order in which they have been added to the Set. Duplicates are not allowed.
-
-**Tree Set:**
-*	It is one of the two sorted collections.
-*	Uses “Read-Black” tree structure and guarantees that the elements will be in an ascending order.
-*	We can construct a tree set with the constructor by using comparable (or) comparator.
-
-Example:
-```java
-public class Fruits{
-  public static void main (String[] args) {
-    Treeset<String> names= new TreeSet<String>();
-    names.add(“cherry”);
-    names.add(“banana”);
-    names.add(“apple”);
-    names.add(“kiwi”);
-    names.add(“cherry”);
-    System.out.println(names);
-  }
-}
-```
-Output:
-
-[apple, banana, cherry, kiwi]
-
-TreeSet sorts the elements in an ascending order. And duplicates are not allowed.
-
-
+On the other hand, the BookListContainer component is a class component.
 ---
 
-### 9. What is the final keyword in Java?
+### 9. What is the difference between state and props?
 
-**Final variable:**
+**The basic difference is: State is mutable and Pros are immutable.**
 
-Once a variable is declared as final, then the value of the variable could not be changed. It is like a constant.
+The State is a data structure that starts with a default value when a Component mounts. It may be mutated across time, mostly as a result of user events.
+Props (short for properties) are a Component’s configuration. Props are how components talk to each other. They are received from above component and immutable as far as the Component receiving them is concerned. A Component cannot change its props, but it is responsible for putting together the props of its child Components. Props do not have to just be data — callback functions may be passed in as props.
 
-Example:
-```java
-final int = 12;
-```
-**Final method:**
+There is also the case that we can have default props so that props are set even if a parent component doesn’t pass props down.
 
-A final keyword in a method that couldn’t be overridden. If a method is marked as a final, then it can’t be overridden by the subclass.
-
-**Final class:**
-
-If a class is declared as final, then the class couldn’t be subclassed. No class can extend the final class.
-
-
+ <Code/Image here>
+ 
+Props and State do similar things but are used in different ways. The majority of our components will probably be stateless. Props are used to pass data from parent to child or by the component itself. They are immutable and thus will not be changed. State is used for mutable data, or data that will change. This is particularly useful for user input.
 ---
 
-### 10. What is a Thread?
+### 10. What are Controlled components?
 
-In Java, the flow of an execution is called Thread. Every java program has at least one thread called main thread, the Main thread is created by JVM. The user can define their own threads by extending Thread class (or) by implementing Runnable interface. Threads are executed concurrently.
+In HTML, form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input. When a user submits a form the values from the aforementioned elements are sent with the form. With React it works differently. The component containing the form will keep track of the value of the input in its state and will re-render the component each time the callback function e.g. onChange is fired as the state will be updated. A form element whose value is controlled by React in this way is called a "Controlled Component".
+  
+With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input.
 
-Example:
-```java
-public static void main(String[] args){//main thread starts here
-
-}
-```
 ---
 
 Wish you all the best.
