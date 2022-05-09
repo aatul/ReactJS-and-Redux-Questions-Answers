@@ -200,7 +200,7 @@ In HTML, form elements such as <input>, <textarea>, and <select> typically maint
 With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input.
 
 **[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
-
+  
 ---
 
 Wish you all the best.
