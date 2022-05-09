@@ -33,13 +33,22 @@ The major features of React are:
 
 ### 2. What is JSX?
 
-| GET        | POST      | 
-| ------------- |-------------| 
-|Limited amount of data can be sent because data is sent in the header.|Large amount of data can be sent because data is sent in the body.|
-|Not Secured because data is exposed in the URL bar.|Secured because data is not exposed in the URL bar.|
-|Can be bookmarked|Cannot be bookmarked|
-|Idempotent|Non-Idempotent|
-|It is more efficient and use than Post|It is less efficient and used|
+JSX is a syntax extension to JavaScript and comes with the full power of JavaScript.
+*	 JSX produces React “elements”.
+*	 You can embed any JavaScript expression in JSX by wrapping it in curly braces. 
+
+After compilation, JSX expressions become regular JavaScript objects. This means that you can use JSX inside of if statements and for loops, assign it to variables, accept it as arguments, and return it from functions. Even Though React does not require JSX, it is the recommended way of describing our UI in React app.
+
+For example, below is the syntax for a basic element in React with JSX and its equivalent without it.
+```js
+const element=(
+  <h1 classname="greeting">
+    Hello World!
+  </h1>
+```
+Equivalent of the above using React.createElement
+ 
+
 
 ---
 
