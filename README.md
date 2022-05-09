@@ -1,12 +1,12 @@
-# Java-Interview-Questions-Answers
+# ReactJS and Redux Questions Answers
 
-Looking forward to appear in Java Interview, here are the key Java Interview Questions with Answers only for you.
+Looking forward to appear in React and Redux Interview, here are the key React and Redux Interview Questions with Answers only for you.
 
 ### Table of Contents
 | Sr.No.        | Question      | 
 | ------------- |-------------| 
-| 1             |[What are new Java8 Features?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#1-new-java8-features) | 
-| 2             |[Difference between GET & POST METHODS?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#2-difference-between-get--post-methods) |
+| 1             |[How does React work? How does Virtual-DOM work in React?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#1-how-does-react-work-how-does-virtual-dom-work-in-react) | 
+| 2             |[What is JSX?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#2-what-is-jsx) |
 | 3             |[Difference between forward() method & SendRedirect() method?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#3-difference-between-forward-method--sendredirect-method) |
 | 4             |[Difference between HashMap and HashTable?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#4-difference-between-hashmap-and-hashtable) |
 | 5             |[Difference between HashSet and TreeSet?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#5-difference-between-hashset-and-treeset) |
@@ -17,30 +17,21 @@ Looking forward to appear in Java Interview, here are the key Java Interview Que
 | 10             |[What is a Thread?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#10-what-is-a-thread) |
 ---
 
-### 1. New Java8 Features
+### 1. How does React work? How does Virtual-DOM work in React?
 
-Java 8 provides following features for Java Programming:
-*	Lambda expressions - Adds functional processing capability to Java. 
-*	Method references - Referencing functions by their names instead of invoking them directly. Using functions as parameters. 
-*	Functional interfaces,
-*	Stream API - New stream API to facilitate pipeline processing. 
-*	Default methods,
-*	Base64 Encode Decode,
-*	Static methods in interface,
-*	Optional class,
-*	Collectors class,
-*	ForEach() method,
-*	+36
-*	Parallel array sorting,
-*	Nashorn JavaScript Engine - A Java-based engine to execute JavaScript code. 
-*	Parallel Array Sorting,
-*	Type and Repeating Annotations,
-*	IO Enhancements,
-*	Concurrency Enhancements,
-*	JDBC Enhancements etc.
+React creates a virtual DOM. When state changes in a component it firstly runs a “diffing” algorithm, which identifies what has changed in the virtual DOM. The second step is reconciliation, where it updates the DOM with the results of diff. The HTML DOM is always tree-structured — which is allowed by the structure of HTML documents. The DOM trees are huge nowadays because of large apps. Since we are more and more pushed towards dynamic web apps (Single Page Applications — SPAs), we need to modify the DOM tree incessantly/constantly and a lot. And this is a real performance and development pain.
+
+The Virtual DOM is an abstraction of the HTML DOM. It is lightweight and detached from the browser-specific implementation details. It is not invented by React but it uses it and provides it for free. ReactElements lives in the virtual DOM. They make the basic nodes here. Once we define the elements, ReactElements can be rendered into the "real" DOM. Whenever a ReactComponent is changing the state, diff algorithm in React runs and identifies what has changed. And then it updates the DOM with the results of diff. The point is - it’s done faster than it would be in the regular DOM.
+
+The major features of React are:
+*	It uses VirtualDOM instead of RealDOM considering that RealDOM manipulations are expensive.
+*	Supports server-side rendering.
+*	Follows Unidirectional data flow or data binding.
+*	Uses reusable/composable UI components to develop the view.
+
 ---
 
-### 2. Difference between GET & POST METHODS?
+### 2. What is JSX?
 
 | GET        | POST      | 
 | ------------- |-------------| 
