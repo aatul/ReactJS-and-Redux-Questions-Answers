@@ -107,13 +107,42 @@ const Button = ({ onLogin }) => React.createElement(
 
 ### 4. What is React.createClass?
 
-| HashMap        | HashTable      | 
-| ------------- |-------------| 
-|Methods are not synchronized|Key methods are synchronized|
-|Not thread safe|Thread safe|
-|Iterator is used to iterate the values|Enumerator is used to iterate the values|
-|Allows one null key and multiple null values|Doesn’t allow anything that is null|
-|Performance is high than HashTable|Performance is slow|
+React.createClass allows us to generate component "classes." But with ES6, React allows us to implement component classes that use ES6 JavaScript classes. The end result is the same -- we have a component class. But the style is different. And one is using a "custom" JavaScript class system (createClass) while the other is using a "native" JavaScript class system.
+
+When using React’s createClass() method, we pass in an object as an argument. So we can write a component using createClass that looks like this:
+```js
+import React from 'react';
+
+const Contacts = React.createClass({
+  render(){
+    return(
+      <div></div>
+    )
+  }
+});
+
+export default Contacts;
+```
+Using an ES6 class to write the same component is a little different. Instead of using a method from the react library, we extend an ES6 class that the library defines, Component.
+```js
+import React from 'react';
+
+const Contacts extends React.Component({
+  constructor(props){
+    super(props);
+  }
+  
+  render(){
+    return(
+      <div></div>
+    )
+  }
+});
+
+export default Contacts;
+```
+constructor() is a special function in a JavaScript class. JavaScript invokes constructor() whenever an object is created via a class.
+
 
 **[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
 
