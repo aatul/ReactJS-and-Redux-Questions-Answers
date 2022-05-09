@@ -118,7 +118,7 @@ When our component just receives props and renders them to the page, this is a �
 
 From the previous question, we can say that our Booklist component is functional and is stateless.
 
-<Code/Image here>
+--Code/Image here--
 
 On the other hand, the BookListContainer component is a class component.
 ---
@@ -132,7 +132,7 @@ Props (short for properties) are a Component’s configuration. Props are how co
 
 There is also the case that we can have default props so that props are set even if a parent component doesn’t pass props down.
 
- <Code/Image here>
+ --Code/Image here--
  
 Props and State do similar things but are used in different ways. The majority of our components will probably be stateless. Props are used to pass data from parent to child or by the component itself. They are immutable and thus will not be changed. State is used for mutable data, or data that will change. This is particularly useful for user input.
 ---
