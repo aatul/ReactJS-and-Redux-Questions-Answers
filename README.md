@@ -56,6 +56,9 @@ const element= React.createElement(
   'Hello World!'
 );
 ```
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
 ---
 
 ### 3. What is the difference between Element and Component?
@@ -98,6 +101,8 @@ const Button = ({ onLogin }) => React.createElement(
 )
 ```
 
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
 ---
 
 ### 4. What is React.createClass?
@@ -110,6 +115,8 @@ const Button = ({ onLogin }) => React.createElement(
 |Allows one null key and multiple null values|Doesn’t allow anything that is null|
 |Performance is high than HashTable|Performance is slow|
 
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
 ---
 
 ### 5. Describe the key differences in React & Angular? / Angular vs React?
@@ -119,6 +126,8 @@ const Button = ({ onLogin }) => React.createElement(
 |Inserted elements are in random order|Maintains the elements in the sorted order|
 |Can store null objects|Couldn’t store null objects|
 |Performance is fast|Performance is slow|
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
 
 ---
 
@@ -130,6 +139,8 @@ It is basically just a thin middleware wrapper around RxJS with just a few addit
 
 Similar to how sagas are handled, side effects in Redux-Observable are separated from other redux code and are handled in so-called epics. An epic is basically just a function which takes a stream of actions and returns a new stream of actions. Note though, that an action already has flown through your reducers at the time it arrives in your epics.
 
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
 ---
 
 ### 7. What is React DOM and what is the difference between React DOM and React?
@@ -139,6 +150,8 @@ Prior to v0.14, all ReactDOM functionality was part of React. But later, React a
 As the name implies, ReactDOM is the glue between React and the DOM. Often, we will only use it for one single thing: mounting with ReactDOM. Another useful feature of ReactDOM is ReactDOM.findDOMNode() which we can use to gain direct access to a DOM element.
 
 For everything else, there’s React. We use React to define and create our elements, for lifecycle hooks, etc. i.e. the guts of a React application.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
 
 ---
 
@@ -153,6 +166,8 @@ From the previous question, we can say that our Booklist component is functional
 --Code/Image here--
 
 On the other hand, the BookListContainer component is a class component.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
 
 ---
 
@@ -169,6 +184,8 @@ There is also the case that we can have default props so that props are set even
 
 Props and State do similar things but are used in different ways. The majority of our components will probably be stateless. Props are used to pass data from parent to child or by the component itself. They are immutable and thus will not be changed. State is used for mutable data, or data that will change. This is particularly useful for user input.
 
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
 ---
 
 ### 10. What are Controlled components?
@@ -176,6 +193,8 @@ Props and State do similar things but are used in different ways. The majority o
 In HTML, form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input. When a user submits a form the values from the aforementioned elements are sent with the form. With React it works differently. The component containing the form will keep track of the value of the input in its state and will re-render the component each time the callback function e.g. onChange is fired as the state will be updated. A form element whose value is controlled by React in this way is called a "Controlled Component".
   
 With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
 
 ---
 
