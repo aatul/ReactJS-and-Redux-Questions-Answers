@@ -58,11 +58,43 @@ const element= React.createElement(
 
 ### 3. What is the difference between Element and Component?
 
-| forward() method        | sendRedirect() method      | 
-| ------------- |-------------| 
-|forward() sends the same request to another resource.|sendRedirect() method sends new request always because it uses the URL bar of the browser.|
-|forward() method works at server side.|sendRedirect() method works at client side.|
-|forward() method works within the server only.|sendRedirect() method works within and outside the server.|
+An Element is a plain object describing what you want to appear on the screen in terms of the DOM nodes or other components. Elements can contain other Elements in their props. Creating a React element is cheap. Once an element is created, it is never mutated.
+
+The object representation of React Element would be as follows:
+```js
+const element = React.createElement(
+  'div',
+  {id: 'login-btn'},
+  'Login'
+)
+```
+The above React.createElement() function returns an object:
+```js
+{
+  type: 'div',
+  props: {
+    children: 'Login',
+    id: 'login-btn'
+  }
+}
+```
+And finally it renders to the DOM using ReactDOM.render():
+```js
+<div id='login-btn'>Login</div>
+```
+Whereas a component can be declared in several different ways. It can be a class with a render() method. Alternatively, in simple cases, it can be defined as a function. In either case, it takes props as an input, and returns a JSX tree as the output:
+```js
+const Button = ({ onLogin }) =>
+  <div id={'login-btn'} onClick={onLogin}>Login</div>
+```
+Then JSX gets transpiled to a React.createElement() function tree:
+```js
+const Button = ({ onLogin }) => React.createElement(
+  'div',
+  { id: 'login-btn', onClick: onLogin },
+  'Login'
+)
+```
 
 ---
 
@@ -90,14 +122,12 @@ const element= React.createElement(
 
 ### 6. What are Redux-Observables?
 
-The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects. Java Collections can achieve all the operations that you perform on data such as searching, sorting, insertion, manipulation, and deletion.Java Collection means a single unit of objects. The Java Collection framework provides many interfaces (Set, List, Queue, Deque) and classes (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet). 
+Another popular solution for handling async operations is Redux-Observable. As the name already suggests Redux-Observable is built around the concept of observables and reactive streams. 
 
-Collections are used to perform the following operations:
-*	Searching
-*	Sorting
-*	Manipulation
-*	Insertion
-*	Deletion 
+It is basically just a thin middleware wrapper around RxJS with just a few additional helper methods. Therefore you also need to add RxJS to your application if you want to use Redux-Observable.
+
+Similar to how sagas are handled, side effects in Redux-Observable are separated from other redux code and are handled in so-called epics. An epic is basically just a function which takes a stream of actions and returns a new stream of actions. Note though, that an action already has flown through your reducers at the time it arrives in your epics.
+
 ---
 
 ### 7. What is React DOM and what is the difference between React DOM and React?
@@ -121,6 +151,7 @@ From the previous question, we can say that our Booklist component is functional
 --Code/Image here--
 
 On the other hand, the BookListContainer component is a class component.
+
 ---
 
 ### 9. What is the difference between state and props?
@@ -133,8 +164,9 @@ Props (short for properties) are a Component’s configuration. Props are how co
 There is also the case that we can have default props so that props are set even if a parent component doesn’t pass props down.
 
  --Code/Image here--
- 
+
 Props and State do similar things but are used in different ways. The majority of our components will probably be stateless. Props are used to pass data from parent to child or by the component itself. They are immutable and thus will not be changed. State is used for mutable data, or data that will change. This is particularly useful for user input.
+
 ---
 
 ### 10. What are Controlled components?
