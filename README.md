@@ -7,14 +7,14 @@ Looking forward to appear in React and Redux Interview, here are the key React a
 | ------------- |-------------| 
 | 1             |[How does React work? How does Virtual-DOM work in React?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#1-how-does-react-work-how-does-virtual-dom-work-in-react) | 
 | 2             |[What is JSX?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#2-what-is-jsx) |
-| 3             |[What is the difference between Element and Component?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#3-difference-between-forward-method--sendredirect-method) |
-| 4             |[What is React.createClass?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#4-difference-between-hashmap-and-hashtable) |
-| 5             |[Describe the key differences in React & Angular? / Angular vs React?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#5-difference-between-hashset-and-treeset) |
-| 6             |[What are Redux-Observables?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#6-what-is-meant-by-collections-in-java) | 
-| 7             |[What is React DOM and what is the difference between React DOM and React?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#7-what-is-meant-by-ordered-and-sorted-in-collections) |
-| 8             |[What are the differences between a Class component and Functional component?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#8-explain-about-set-and-their-types-in-a-collection) |
-| 9             |[What is the difference between state and props?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#9-what-is-the-final-keyword-in-java) |
-| 10             |[What are Controlled components?](https://github.com/aatul/Java-Interview-Questions-Answers/blob/master/README.md#10-what-is-a-thread) |
+| 3             |[What is the difference between Element and Component?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#3-what-is-the-difference-between-element-and-component) |
+| 4             |[What is React.createClass?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#4-what-is-reactcreateclass) |
+| 5             |[Describe the key differences in React & Angular? / Angular vs React?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#5-describe-the-key-differences-in-react--angular--angular-vs-react) |
+| 6             |[What are Redux-Observables?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#6-what-are-redux-observables) | 
+| 7             |[What is React DOM and what is the difference between React DOM and React?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#7-what-is-react-dom-and-what-is-the-difference-between-react-dom-and-react) |
+| 8             |[What are the differences between a Class component and Functional component?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#8-what-are-the-differences-between-a-class-component-and-functional-component) |
+| 9             |[What is the difference between state and props?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#9-what-is-the-difference-between-state-and-props) |
+| 10             |[What are Controlled components?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#10-what-are-controlled-components) |
 ---
 
 ### 1. How does React work? How does Virtual-DOM work in React?
