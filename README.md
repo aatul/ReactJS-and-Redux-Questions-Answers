@@ -121,11 +121,16 @@ const Button = ({ onLogin }) => React.createElement(
 
 ### 5. Describe the key differences in React & Angular? / Angular vs React?
 
-| HashSet        | TreeSet      | 
+| React Js        | Angular Js      | 
 | ------------- |-------------| 
-|Inserted elements are in random order|Maintains the elements in the sorted order|
-|Can store null objects|Couldn’t store null objects|
-|Performance is fast|Performance is slow|
+|React is a JavaScript library for building user interfaces.|Angular is a TypeScript-based, open-source front-end web application platform.|
+|React uses a virtual DOM.|Angular uses the browser's DOM|
+|React, is a JavaScript library as well, but recommends using JSX.|Angularis a JS framework by nature, but is built to use TypeScript.|
+|React - Low Learning Curve|Angular - High Learning Curve|
+|React is just more of a 'V' in the MVC.|Angular is a fully-featured MVC framework.|
+|While React can be bundled with other programming libraries, Angular is a complete solution in itself. For unidirectional data flow, React needs to be augmented by Redux.|Angular uses a two-directional data flow process where it updates the Real DOM directly while React updates only the Virtual DOM and is concerned with the one-directional data flow.|
+|Dynamic Applications: React will be a great choice because it uses a virtual DOM. It can quickly incorporate and "react" to the data changes made in the view by the users.|Single Page Apps: Angular will be a great solution because it can display all changes made to the content without reloading the current page.|
+|React has a sibling by the name of React Native, which allows you to build a complete mobile app for either Android or iOS. Not a web app that runs on a mobile phone, but a full-fledged mobile app built with JavaScript.|With Angular you can build hybrid mobile apps, but let's be fair, a native mobile app will always outdo a hybrid mobile app.|
 
 **[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
 
