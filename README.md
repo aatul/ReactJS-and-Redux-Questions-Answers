@@ -47,9 +47,13 @@ const element=(
   </h1>
 ```
 Equivalent of the above using React.createElement
- 
-
-
+```js
+const element= React.createElement(
+  'h1',
+  {"classname": "greeting"},
+  'Hello World!'
+);
+```
 ---
 
 ### 3. Difference between forward() method & SendRedirect() method?
