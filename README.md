@@ -374,5 +374,59 @@ class MyComponent extends React.PureComponent{
 
 ---
 
+### 16. How Virtual-DOM is more efficient than Dirty checking?
+
+In React, each of our components have a state. This state is like an observable. Essentially, React knows when to re-render the scene because it is able to observe when this data changes. Dirty checking is slower than observables because we must poll the data at regular intervals and check all of the values in the data structure recursively. By comparison, setting a value on the state will signal to a listener that some state has changed, so React can simply listen for change events on the state and queue up re-rendering.
+
+The virtual DOM is used for efficient re-rendering of the DOM. This isn’t really related to dirty checking your data. We could re-render using a virtual DOM with or without dirty checking. In fact, the diff algorithm is a dirty checker itself.
+
+We aim to re-render the virtual tree only when the state changes. So, using an observable to check if the state has changed is an efficient way to prevent unnecessary re-renders, which would cause lots of unnecessary tree diffs. If nothing has changed, we do nothing.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 17. What is FLUX in ReactJs?
+
+Flux is an application architecture in React View Library which is designed by Facebook for creating data layers in an application based on JavaScript.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 18. What are the refs in React?
+
+For focus management, trigger animation we use refs in React. It also contains third party libraries.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 19. What is the stable version of ReactJs?
+
+Version: 15.5
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 20. Is setState() async? Why is setState() in React Async instead of Sync?
+
+setState() actions are asynchronous and are batched for performance gains. setState() does not immediately mutate this.state but creates a pending state transition. Accessing this.state after calling this method can potentially return the existing value. There is no guarantee of synchronous operation of calls to setState and calls may be batched for performance gains.
+
+This is because setState alters the state and causes rerendering. This can be an expensive operation and making it synchronous might leave the browser unresponsive. Thus, the setState calls are asynchronous as well as batched for better UI experience and performance.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 21. What is render() in React? And explain its purpose?
+
+Each React component must have a ```render()``` mandatorily. It returns a single React element which is the representation of the native DOM component. If more than one HTML element needs to be rendered, then they must be grouped together inside one enclosing tag such as ```<form>```, ```<group>```, ```<div>``` etc. This function must be kept pure i.e., it must return the same result each time it is invoked.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
 ### Wish you all the luck
 
