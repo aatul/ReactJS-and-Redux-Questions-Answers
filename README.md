@@ -319,7 +319,7 @@ Redux is based on the idea that there should be only a single source of truth fo
 
 All of these data is retained by redux in a closure that redux calls a store. It also provides us a recipe for creating the said store, namely createStore(x).
 
-The createStore function accepts another function, x as an argument. The passed in function is responsible for returning the state of the application at that point in time, which is then persisted in the store. This passed in function is known as the reducer.
+The ```createStore()``` function accepts another function, x as an argument. The passed in function is responsible for returning the state of the application at that point in time, which is then persisted in the store. This passed in function is known as the reducer.
 This is a valid example reducer function:
 
 ```js
@@ -412,7 +412,7 @@ Version: 15.5
 
 ### 20. Is setState() async? Why is setState() in React Async instead of Sync?
 
-setState() actions are asynchronous and are batched for performance gains. setState() does not immediately mutate this.state but creates a pending state transition. Accessing this.state after calling this method can potentially return the existing value. There is no guarantee of synchronous operation of calls to setState and calls may be batched for performance gains.
+```setState()``` actions are asynchronous and are batched for performance gains. ```setState()``` does not immediately mutate this.state but creates a pending state transition. Accessing this.state after calling this method can potentially return the existing value. There is no guarantee of synchronous operation of calls to setState and calls may be batched for performance gains.
 
 This is because setState alters the state and causes rerendering. This can be an expensive operation and making it synchronous might leave the browser unresponsive. Thus, the setState calls are asynchronous as well as batched for better UI experience and performance.
 
