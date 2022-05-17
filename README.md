@@ -265,9 +265,43 @@ In HTML, form elements such as ```<input>```, ```<textarea>```, and ```<select>`
   
 With a controlled component, every state mutation will have an associated handler function. This makes it straightforward to modify or validate user input.
 
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 11. What is a Higher Order component?
+
+A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API. They are a pattern that emerges from React’s compositional nature.
+
+A higher-order component is a function that takes a component and returns a new component.
+
+HOC’s allow you to reuse code, logic and bootstrap abstraction. HOCs are common in third-party React libraries. The most common is probably Redux’s connect function. Beyond simply sharing utility libraries and simple composition, HOCs are the best way to share behavior between React Components. If you find yourself writing a lot of code in different places that does the same thing, you may be able to refactor that code into a reusable HOC.
 
 **[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
 
 ---
+
+### 12. What is create-react-app?
+
+```create-react-app``` is the official CLI (Command Line Interface) for React to create React apps with no build configuration.
+
+We don’t need to install or configure tools like Webpack or Babel. They are preconfigured and hidden so that we can focus on the code. We can install it easily just like any other node modules. Then it is just one command to start the React project.
+
+```js
+create-react-app my-app
+```
+
+It includes everything we need to build a React app:
+-	React, JSX, ES6, and Flow syntax support.
+-	Language extras beyond ES6 like the object spread operator.
+-	Auto prefixed CSS, so you don’t need ```-webkit-``` or other prefixes.
+-	A fast interactive unit test runner with built-in support for coverage reporting.
+-	A live development server that warns about common mistakes.
+-	A build script to bundle JS, CSS, and images for production, with hashes and source maps.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
 ### Wish you all the luck
 
