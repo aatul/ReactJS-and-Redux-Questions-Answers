@@ -303,5 +303,76 @@ It includes everything we need to build a React app:
 
 ---
 
+### 13. What is Redux?
+
+The basic idea of Redux is that the entire application state is kept in a single store. The store is simply a javascript object. The only way to change the state is by firing actions from your application and then writing reducers for these actions that modify the state. The entire state transition is kept inside reducers and should not have any side-effects.
+
+Redux is based on the idea that there should be only a single source of truth for your application state, be it UI state like which tab is active or Data state like the user profile details.
+
+```js
+{
+  first_name: 'John',
+  last_name: 'Doe',
+  age: 28
+}
+```
+
+All of these data is retained by redux in a closure that redux calls a store. It also provides us a recipe for creating the said store, namely createStore(x).
+
+The createStore function accepts another function, x as an argument. The passed in function is responsible for returning the state of the application at that point in time, which is then persisted in the store. This passed in function is known as the reducer.
+This is a valid example reducer function:
+
+```js
+export default function reducer(state={}, action){
+  return state;
+}
+```
+This store can only be updated by dispatching an action. Our App dispatches an action, it is passed into reducer; the reducer returns a fresh instance of the state; the store notifies our App and it can begin its re-render as required.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 14. What is Redux Thunk used for?
+
+Redux thunk is middleware that allows us to write action creators that return a function instead of an action. The thunk can then be used to delay the dispatch of an action if a certain condition is met. This allows us to handle the asynchronous dispatching of actions. The inner function receives the store methods dispatch and getState as parameters.
+
+To enable Redux Thunk, we need to use applyMiddleware() as below;
+```js
+import { createStore, applyMiddleware} from 'redux';
+import thunk from 'redux-thunk';
+import rootReducer from './reducers/index';
+
+// Note: this API requires redux@>=3.1.0
+const store = createStore(
+  rootReducer,
+  applyMiddleware(thunk)
+);
+```
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 15. What is PureComponent? When to use PureComponent over Component?
+
+PureComponent is exactly the same as Component except that it handles the shouldComponentUpdate method for us. When props or state changes, PureComponent will do a shallow comparison on both props and state. Components on the other hand won't compare current props and state to next out of the box. Thus, the component will re-render by default whenever shouldComponentUpdate is called.
+
+When comparing previous props and state to next, a shallow comparison will check that primitives have the same value (eg, 1 equals 1 or that true equals true) and that the references are the same between more complex javascript values like objects and arrays.
+
+It is good to prefer PureComponent over Component whenever we never mutate our objects. 
+
+```js
+class MyComponent extends React.PureComponent{
+  render(){
+    return <div>Hello World!</div>
+  }
+}
+```
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
 ### Wish you all the luck
 
