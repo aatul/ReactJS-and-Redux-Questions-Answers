@@ -489,11 +489,11 @@ With React Native it is possible to mimic the behavior of the native app in Java
 
 ### 27. Principal features/benefits of Redux?
 
-a)	Maintainability: maintenance of Redux becomes easier due to strict code structure and organization.
-b)	Organization: code organization is very strict hence the stability of the code is high which intern increases the work to be much easier.
-c)	Server rendering: This is useful, particularly for the preliminary render, which keeps up a better user experience or search engine optimization. The server-side created stores are forwarded to the client-side.
-d)	Developer tools: It is Highly traceable so changes in position and changes in the application all such instances make the developers have a real-time experience.
-e)	Ease of testing: The first rule of writing testable code is to write small functions that do only one thing and that are independent. Redux’s code is made of functions that used to be: small, pure, and isolated.
+-	Maintainability: maintenance of Redux becomes easier due to strict code structure and organization.
+-	Organization: code organization is very strict hence the stability of the code is high which intern increases the work to be much easier.
+-	Server rendering: This is useful, particularly for the preliminary render, which keeps up a better user experience or search engine optimization. The server-side created stores are forwarded to the client-side.
+-	Developer tools: It is Highly traceable so changes in position and changes in the application all such instances make the developers have a real-time experience.
+-	Ease of testing: The first rule of writing testable code is to write small functions that do only one thing and that are independent. Redux’s code is made of functions that used to be: small, pure, and isolated.
 
 **[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
 
