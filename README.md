@@ -428,5 +428,121 @@ Each React component must have a ```render()``` mandatorily. It returns a single
 
 ---
 
+### 22. What are controlled and uncontrolled components in React?
+
+This relates to stateful DOM components (form elements) and the difference:
+
+-	A Controlled Component is one that takes its current value through props and notifies changes through callbacks like onChange. A parent component “controls” it by handling the callback and managing its own state and passing the new values as props to the controlled component. You could also call this a “dumb component”.
+-	An Uncontrolled Component is one that stores its own state internally, and you query the DOM using a ref to find its current value when you need it. This is a bit more like traditional HTML.
+
+In most (or all) cases we should use controlled components.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 23. Explain the components of Redux?
+
+Redux is composed of the following components:
+
+-	Action — Actions are payloads of information that send data from our application to our store. They are the only source of information for the store. We send them to the store using store.dispatch(). Primarily, they are just an object describing what happened in our app.
+-	Reducer — Reducers specify how the application’s state changes in response to actions sent to the store. Remember that actions only describe what happened, but don’t describe how the application’s state changes. So this place determines how the state will change to action.
+-	Store — The Store is the object that brings Action and Reducer together. The store has the following responsibilities: Holds application state; Allows access to the state via getState(); Allows the state to be updated via dispatch(action); Registers listeners via subscribe(listener); Handles unregistering of listeners via the function returned by subscribe(listener).
+
+It’s important to note that we’ll only have a single store in a Redux application. When we want to split your data handling logic, we’ll use reducer composition instead of many stores.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 24. What is React.cloneElement? And the difference with this.props.children?
+
+React.cloneElement clone and return a new React element using the passed element as the starting point. The resulting element will have the original element's props with the new props merged in shallowly. New children will replace existing children. key and ref from the original element will be preserved.
+
+React.cloneElement only works if our child is a single React element. For almost everything {this.props.children} is the better solution. Cloning is useful in some more advanced scenarios, where a parent send in an element and the child component needs to change some props on that element or add things like ref for accessing the actual DOM element.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 25. What is the second argument that can optionally be passed to setState and what is its purpose?
+
+A callback function which will be invoked when setState has finished and the component is re-rendered.
+
+Since the setState is asynchronous, which is why it takes in a second callback function. With this function, we can do what we want immediately after the state has been updated.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 26. What is the difference between React Native and React?
+
+React is a JavaScript library, supporting both front-end web and being run on the server, for building user interfaces and web applications.
+
+On the other hand, React Native is a mobile framework that compiles to native app components, allowing us to build native mobile applications (iOS, Android, and Windows) in JavaScript that allows us to use ReactJS to build our components and implement ReactJS under the hood.
+
+With React Native it is possible to mimic the behavior of the native app in JavaScript and the end, we will get platform-specific code as the output. We may even mix the native code with JavaScript if we need to optimize our application further.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 27. Principal features/benefits of Redux?
+
+a)	Maintainability: maintenance of Redux becomes easier due to strict code structure and organization.
+b)	Organization: code organization is very strict hence the stability of the code is high which intern increases the work to be much easier.
+c)	Server rendering: This is useful, particularly for the preliminary render, which keeps up a better user experience or search engine optimization. The server-side created stores are forwarded to the client-side.
+d)	Developer tools: It is Highly traceable so changes in position and changes in the application all such instances make the developers have a real-time experience.
+e)	Ease of testing: The first rule of writing testable code is to write small functions that do only one thing and that are independent. Redux’s code is made of functions that used to be: small, pure, and isolated.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 28. Redux change of state?
+
+For a release of action, a change in state to an application is applied, this ensures an intent to change the state will be achieved.
+
+Example:
+-	The **user clicks a button** in the application.
+-	A **function is called** in the **form of component**.
+-	So now an **action gets dispatched** by the **relative container**.
+-	This happens because the **prop** (which was just called in the container) **is tied to an action dispatcher** using **mapDispatchToProps** (in the container).
+-	**Reducer on capturing the action** it intern **executes a function** and **this function returns** a **new state** with **specific changes**.
+-	The **state change is known** by the **container** and **modifies a specific prop** in the **component** as a result of the **mapStateToProps** function.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 29. Redux workflow features?
+
+**Reset:** Allow to reset the state of the store
+**Revert:** Roll back to the last committed state
+**Sweep:** All disabled actions that you might have fired by mistake will be removed
+**Commit:** makes the current state the initial state
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
+### 30. Explain actions in Redux?
+
+Actions in Redux are functions that return an action object. The action type and the action data are packed in the action object. which also allows a donor to be added to the system. Actions send data between the store and the application. All information retrieved by the store is produced by the actions.
+
+```js
+export function addDonorAction(donor) {
+  return {
+    type: actionTypes.addDonor,
+    donor,
+  };
+}
+```
+Internal Actions are built on top of Javascript objects and associate a type property to it.
+
+**[Back to Top](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#table-of-contents)**
+
+---
+
 ### Wish you all the luck
 
