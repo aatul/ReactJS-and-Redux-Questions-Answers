@@ -15,6 +15,26 @@ Looking forward to appear in React and Redux Interview, here are the key React a
 | 8             |[What are the differences between a Class component and Functional component?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#8-what-are-the-differences-between-a-class-component-and-functional-component) |
 | 9             |[What is the difference between state and props?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#9-what-is-the-difference-between-state-and-props) |
 | 10             |[What are Controlled components?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#10-what-are-controlled-components) |
+| 11             |[What is a Higher Order component?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#11-what-is-a-higher-order-component) |
+| 12             |[What is create-react-app?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#12-what-is-create-react-app) |
+| 13             |[What is Redux?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#13-what-is-redux) |
+| 14             |[What is Redux Thunk used for?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#14-what-is-redux-thunk-used-for) |
+| 15             |[What is PureComponent? When to use PureComponent over Component?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#15-what-is-purecomponent-when-to-use-purecomponent-over-component) |
+| 16             |[How Virtual-DOM is more efficient than Dirty checking?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#16-how-virtual-dom-is-more-efficient-than-dirty-checking) |
+| 17             |[What is FLUX in ReactJs?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#17-what-is-flux-in-reactjs) |
+| 18             |[What are the refs in React?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#18-what-are-the-refs-in-react) |
+| 19             |[What is the stable version of ReactJs?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#19-what-is-the-stable-version-of-reactjs) |
+| 20             |[Is setState() async? Why is setState() in React Async instead of Sync?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#20-is-setstate-async-why-is-setstate-in-react-async-instead-of-sync) |
+| 21             |[What is render() in React? And explain its purpose?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#21-what-is-render-in-react-and-explain-its-purpose) |
+| 22             |[What are controlled and uncontrolled components in React?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#22-what-are-controlled-and-uncontrolled-components-in-react) |
+| 23             |[Explain the components of Redux?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#23-explain-the-components-of-redux) |
+| 24             |[What is React.cloneElement? And the difference with this.props.children?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#24-what-is-reactcloneelement-and-the-difference-with-thispropschildren) |
+| 25             |[What is the second argument that can optionally be passed to setState and what is its purpose?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#25-what-is-the-second-argument-that-can-optionally-be-passed-to-setstate-and-what-is-its-purpose) |
+| 26             |[What is the difference between React Native and React?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#26-what-is-the-difference-between-react-native-and-react) |
+| 27             |[Principal features/benefits of Redux?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#27-principal-featuresbenefits-of-redux) |
+| 28             |[Redux change of state?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#28-redux-change-of-state) |
+| 29             |[Redux workflow features?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#29-redux-workflow-features) |
+| 30             |[Explain actions in Redux?](https://github.com/aatul/ReactJS-and-Redux-Questions-Answers/blob/master/README.md#30-explain-actions-in-redux) |
 ---
 
 ### 1. How does React work? How does Virtual-DOM work in React?
